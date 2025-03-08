@@ -1,7 +1,7 @@
 {
     "excel_path": "suivi_jira_dcgf.xlsx",
 
-    "programmes": ["RAFALE", "AVSIMAR"],
+    "programmes": ["RAFALE", "AVSIMAR","M2000"],
     "statuts": ["Ouvert", "Fermé"],
     "priorites": ["P1", "P2", "P3"]
 }
