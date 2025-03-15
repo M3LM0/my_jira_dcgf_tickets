@@ -26,40 +26,6 @@ def main():
 
     app.setPalette(palette)
 
-    # 3) (Optionnel) Feuille de style globale pour affiner l’aspect
-    app.setStyleSheet("""
-        QMainWindow {
-            background-color: #f5f5f5; /* Couleur de fond de la fenêtre */
-        }
-        QPushButton {
-            background-color: #0078d7;
-            color: white;
-            border-radius: 4px;
-            padding: 6px;
-        }
-        QPushButton:hover {
-            background-color: #005999;
-        }
-        QLineEdit {
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding: 4px;
-        }
-        QTextEdit {
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        QComboBox {
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        QTableWidget {
-            gridline-color: #ccc;
-            background-color: #ffffff;
-            alternate-background-color: #f0f0f0; /* Couleur des lignes alternées */
-        }
-    """)
-
     # Initialisation du service et de la fenêtre principale
     ticket_service = TicketService()
     window = MainWindow(ticket_service)
